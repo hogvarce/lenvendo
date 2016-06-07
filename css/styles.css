@@ -1,0 +1,126 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    padding-top: 60px;
+}
+
+.panel {
+    background: #eee;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.button {
+    background-image: linear-gradient( #fcfcfc, #eee );
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 6px 12px;
+}
+
+.button:active {
+    background: #dcdcdc none;
+    border-color: #b5b5b5;
+    box-shadow: inset 0 2px 4px rgba( 0, 0, 0, 0.15 );
+}
+
+.button:hover {
+    background-image: linear-gradient( #eee, #ddd );
+    border-color: #ccc;
+}
+
+#top-nav {
+    top: 0px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: bold;
+    height: 60px;
+    padding: 10px 0px;
+}
+
+#top-nav .headline {
+    display: inline-block;
+    font-size: 32px;
+}
+
+
+#content {
+    padding: 80px 0 50px 0;
+}
+
+.block {
+    box-sizing: border-box;
+    padding: 30px;
+    position: relative;
+}
+
+.block + .block {
+    margin-top: 20px;
+}
+
+.block .headline {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.block .text {
+    padding-top: 20px;
+}
+
+.block .delete {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.block.important {
+    border-width: 2px;
+}
+
+.block.selected {
+    border-color: black;
+    border-style: solid;
+}
+
+.block.important.complex {
+    background-color: green;
+}
+
+.block.important.simple {
+    background-color: red;
+}
+
+#status {
+    border-top: 1px solid #e5e5e5;
+    top: 60px;
+    height: 30px;
+}
+
+#status ul {
+    text-align: center;
+}
+
+#status li {
+    display: inline-block;
+    line-height: 30px;
+}
+#status li + li {
+    margin-left: 100px;
+}
+
+#status .count {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#blocks-selected-complex-count {
+    color: green;
+}
+
+#blocks-selected-simple-count {
+    color: red;
+}
